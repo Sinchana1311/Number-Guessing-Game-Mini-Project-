@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Guessing Game</title>
+
+  <!-- ✅ Google Fonts for Styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Link to External CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Number Guessing Game (1–100)</h1>
+
+    <input type="text" id="guessInput" placeholder="Enter your guess" />
+    <button onclick="submitGuess()" id="submitBtn">Submit</button>
+    <button onclick="startNewGame()" id="newGameBtn">Start New Game</button>
+
+    <p id="response" class="neutral">Start guessing...</p>
+    <p id="timer">Time: 0 seconds</p>
+  </div>
+
+  <!-- ✅ Link to External JavaScript -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
