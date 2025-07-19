@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff); /* light blue */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 360px;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 15px;
+    width: 140px;
+    font-size: 15px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#submitBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#submitBtn:hover {
+    background-color: #43a047;
+}
+
+#newGameBtn {
+    background-color: #607D8B;
+    color: white;
+    display: none;
+    margin-top: 10px;
+}
+
+#newGameBtn:hover {
+    background-color: #546E7A;
+}
+
+#response {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    min-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.neutral { color: #333; }
+.correct { color: #388E3C; }
+.very_close { color: #EF6C00; }
+.close { color: #FB8C00; }
+.warm { color: #FBC02D; }
+.far { color: #1976D2; }
+.invalid { color: #D32F2F; }
+
+#timer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    font-family: 'Roboto Mono', monospace;
+}
